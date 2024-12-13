@@ -7,30 +7,24 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <header>
-        <h1>Esta é minha lista de tarefas</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Crie sua lista de tarefas</h2>
-            <p>A cada vez que uma tarefa é adicionada elas pode ser editada conforme a sua necessidade</p>
-            <p>
-                para marcar a tarefa como concluida, clique em cima do nome da tarefa.
-            </p>
-        </section>
-        <section class="container">
-            <label for="inputadd" class="label"><strong>Tarefa</strong></label>
-            <input type="text" name="inputadd" id="inputadd" placeholder="Adicionar uma tarefa">
-            <button id="botaoadd" onclick="add()">Adicionar</button>
-
-            <ul id="listadd"></ul>
-        </section>
-    </main>
-
-    <footer>
-        <h3>&copy; <strong><a href="https://github.com/ArthurSenaSilveira">Arthur Sena</a></strong></h3>
-    </footer>
-</body>
+    <div id="app">
+        <div class="form">
+            <h1>Adicionar Tarefa</h1>
+            <form>
+                <input type="text" class="tarefa" name="tarefa" id="tarefa" placeholder="Descrição da tarefa">
+                <button id="adicionar">Adicionar</button>
+            </form>
+        </div>
+        <div id="tarefas">
+            <h2>Tarefas</h2>
+            <ul>
+                <!-- <li>
+                    <span>Tarefa01</span>
+                    <button>Remover</button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    </body>
 <script src="script/script.js"></script>
 </html>

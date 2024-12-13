@@ -1,94 +1,54 @@
 @charset "UTF-8";
 
-:root {
-    --azul-1:#0FC2C0;
-    --azul-2:#0CABA8;
-    --azul-3:#008F8C;
-    --azul-4:#015958;
-    --azul-5:#023535;
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
 }
+
 body {
+    background-color: #edf0f1;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    background-color: var(--azul-1);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 90vh;
-    
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
-}
-header, footer {
-    background: var(--azul-3);
-    color: white;
-    padding: 10px;
-    text-align: center;
     width: 100vw;
-    margin-top: -10px;
 }
-main {
-    background-color: white;
-    width: 300px;
-    text-align: center;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+#app {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2 {
+    text-transform: uppercase;
+
 }
 input {
-    width: 80%;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 8px;
-    background-color: #f9f9f9;
-    margin: 5px 0;
-    border-radius: 4px;
     border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 250px;
 }
-.completed {
-    text-decoration: line-through;
-    color: #888;
-}
-button.remove-btn {
-    background-color: red;
-    padding: 5px;
-    border-radius: 4px;
+form button {
+    background-color: #43bc70;
+    padding: 8px 12px;
+    font-size: 16px;
     color: white;
-    border: none;
-    cursor: pointer;
+    border: 0px;
+    border-radius: 3px;
 }
-
-button.remove-btn:hover {
-    background-color: darkred;
-}
-footer a {
-    text-decoration: none;
-    color: white;
+#tarefas button {
+    background-color: transparent;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: red;
+    border: 0px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
 }
